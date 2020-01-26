@@ -1,0 +1,140 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #011627;
+  position: relative;
+  font-family: 'Ubuntu Mono',
+    monospace;
+}
+
+.details {
+  color: white;
+  font-size: 20px;
+}
+
+.profile-link {
+  color: #ff9f10;
+  font-size: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.link-heading {
+  display: block;
+  font-size: 12px;
+}
+
+a:hover,
+a:visited:hover {
+  color: #e76f51;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #e76f51;
+  text-decoration-style: none;
+}
+
+.square-one .inner {
+  background: #b5838b;
+}
+
+.square-two .inner {
+  background: #e5989e;
+}
+
+.square-three .inner {
+  background: #6d6876;
+}
+
+.outer {
+  box-sizing: border-box;
+  padding: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+
+.left {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.right {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  position: relative;
+  width: 340px;
+  height: 345px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.square {
+  position: absolute;
+  display: flex;
+  height: 240px;
+  width: 240px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+
+.inner {
+  height: 240px;
+  width: 4px;
+  margin-right: 8px;
+}
+
+
+.square-one {
+  left: 48px;
+  top: 52px;
+}
+
+.wrap:hover .square-one {
+  left: 0;
+  top: 0;
+}
+
+.square-two {
+  left: 52px;
+  top: 52px;
+}
+
+.square-three {
+  left: 56px;
+  top: 52px;
+}
+
+.wrap:hover .square-three {
+  left: 104px;
+  top: 104px;
+}
+
+h4{
+  font-size: 15px;
+ font-weight: 100;
+}
